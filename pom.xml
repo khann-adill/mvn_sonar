@@ -14,6 +14,8 @@
   <sonar.host.url>http://34.72.104.220:9080</sonar.host.url>
   <sonar.login>admin</sonar.login>
   <sonar.password>admin123</sonar.password>
+  <maven.compiler.source>1.6</maven.compiler.source>
+   <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
   
   <dependencies>
