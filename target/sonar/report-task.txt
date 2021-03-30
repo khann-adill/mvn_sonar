@@ -1,6 +1,0 @@
-projectKey=sonar_test:com.sonar.maven
-serverUrl=http://localhost:9000
-serverVersion=7.1.0.11001
-dashboardUrl=http://localhost:9000/dashboard/index/sonar_test:com.sonar.maven
-ceTaskId=AWONmsu49nJAwD0lo-3B
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWONmsu49nJAwD0lo-3B

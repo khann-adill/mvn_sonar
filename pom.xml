@@ -11,9 +11,9 @@
   
   <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <sonar.host.url>http://34.72.104.220:9080</sonar.host.url>
+  <!--   <sonar.host.url>http://3.101.127.46:9000/</sonar.host.url>
   <sonar.login>admin</sonar.login>
-  <sonar.password>admin123</sonar.password>
+  <sonar.password>admin</sonar.password> -->
   <maven.compiler.source>1.8</maven.compiler.source>
    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -38,5 +38,15 @@
       <url>http://35.192.17.97:8081/nexus/content/repositories/releases</url>
     </repository>
   </distributionManagement>
-
+  <build>
+ <pluginManagement>
+	 <plugins>
+            <plugin>
+		 <groupId>org.sonarsource.scanner.maven</groupId>
+		<artifactId>sonar-maven-plugin</artifactId>
+		 <version>3.7.0.1746</version>
+		 </plugin>
+	 </plugins>
+ </pluginManagement>
+	  </build>
 </project>
