@@ -28,14 +28,13 @@
   </dependencies>
   
   <distributionManagement>
-    <snapshotRepository>
+<!-- <snapshotRepository>
        <id>nexus</id>
-      <!-- <url>http://34.72.104.220:8081/nexus/content/repositories/snapshots</url> -->
            <url>http://34.72.104.220:8081/repository/maven-snapshots</url>
-    </snapshotRepository>
+     </snapshotRepository> -->
     <repository>
-      <id>nexus</id>
-      <url>http://35.192.17.97:8081/nexus/content/repositories/releases</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/khann-adill/mvn_sonar</url>
     </repository>
   </distributionManagement>
   <build>
