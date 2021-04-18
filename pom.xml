@@ -16,6 +16,9 @@
   <sonar.password>admin</sonar.password> -->
   <maven.compiler.source>1.8</maven.compiler.source>
    <maven.compiler.target>1.8</maven.compiler.target>
+  <sonar.projectKey>mvn_sonar</sonar.projectKey>
+  <sonar.organization>khann-adill</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   
   <dependencies>
