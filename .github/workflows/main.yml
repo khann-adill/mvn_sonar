@@ -24,8 +24,6 @@ jobs:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run:
        mvn --settings settings.xml deploy
-    - name: Build and analyze
-      uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    - name: SonarQube Analysis
+      run:
+        mvn sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
